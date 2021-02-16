@@ -11,6 +11,7 @@
 %token NOMBRE
 %start resultat       /* axiom */
 
+
 %%
 
 
@@ -26,7 +27,7 @@ terme:
   | facteur;
 
 facteur:
-  |'('expression')'
+  '('expression')'
   |'-'facteur
   | NOMBRE
   ;
